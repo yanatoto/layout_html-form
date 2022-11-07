@@ -1,1 +1,19 @@
-/* styles go here */
+body {
+  width: 80%;
+  margin: 0 auto;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+.form__field--cats {
+  display: inline;
+}
