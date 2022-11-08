@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta 
@@ -10,12 +11,13 @@
     <title>HTML Form</title>
     <link rel="stylesheet" href="./style.css">
   </head>
+
   <body>
     <h1>HTML Form</h1>
-    <form 
-    class="form" 
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
-    method="post"
+    <form
+     class="form" 
+     action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
+     method="post"
     >
 
       <fieldset class="form__personal">
@@ -31,28 +33,34 @@
         <label class="form__field">
           Name:
           <input 
-          type="text" 
-          name="name" 
-          autocomplete="off"
+           type="text" 
+           name="name" 
+           autocomplete="off"
           >
         </label>
         <label class="form__field">
           How old are you?
           <input 
-          type="number" 
-          name="age" 
-          min="1" 
-          max="100" 
-          value="12"
+           type="number" 
+           name="age" 
+           min="1" 
+           max="100" 
+           value="12"
           >
         </label>
         <label class="form__field">
           Full date of birth:
-          <input type="date" name="date-of-birth">
+          <input 
+           type="date" 
+           name="dateOfBirth"
+          >
         </label>
         <label class="form__field">
           I accept the term of the agreement
-          <input type="checkbox" name="term-of-agreement">
+          <input 
+           type="checkbox" 
+           name="termOfAgreement"
+          >
         </label>
       </fieldset>
 
@@ -60,14 +68,18 @@
         <legend>Registration</legend>
         <label class="form__field">
           E-mail:
-          <input type="email" name="email" 
-          placeholder="email@example.com"
+          <input 
+           type="email" 
+           name="email" 
+           placeholder="email@example.com"
           >
         </label>
         <label class="form__field">
           Password:
-          <input type="text" name="password" 
-          autocomplete="off"
+          <input 
+           type="text" 
+           name="password" 
+           autocomplete="off"
           >
         </label>
       </fieldset>
@@ -78,26 +90,35 @@
           Du you love cats?
           <label class="form__field">
             Yes
-            <input type="radio" name="cats" 
-            value="yes"
+            <input 
+             type="radio" 
+             name="cats" 
+             value="yes"
             >
           </label>
           <label class="form__field">
             No
-            <input type="radio" name="cats" 
-            value="no"
+            <input 
+             type="radio" 
+             name="cats" 
+             value="no"
             >
           </label>
         </div>
         <label for="form__field">
           What is your favorite color?
-          <input type="color" name="color" 
-          value="#00"
+          <input 
+           type="color" 
+           name="color" 
+           value="#00"
           >
         </label>
         <label for="form__field">
           What time do you go to bed?
-          <input type="time" name="time">
+          <input 
+           type="time" 
+           name="time"
+          >
         </label>
         <label for="form__field">
           What are you favorite brand of cars?
@@ -110,8 +131,11 @@
         </label>
         <label class="form__field">
           How do you rate our work?
-          <input type="range" name="rating" 
-          min="0" max="10"
+          <input 
+           type="range" 
+           name="rating" 
+           min="0" 
+           max="10"
           >
         </label>
       </fieldset>
@@ -135,4 +159,5 @@
     </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
+
 </html>
