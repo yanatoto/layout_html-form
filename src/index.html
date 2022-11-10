@@ -12,14 +12,13 @@
     <link rel="stylesheet" href="./style.css">
   </head>
 
+
   <body>
-    
     <form
      class="form" 
      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
      method="post"
     >
-
       <fieldset class="form__personal">
         <legend>Personal information</legend>
         <label class="form__field">
@@ -85,27 +84,25 @@
       </fieldset>
 
       <fieldset class="form__information">
-        <legend>An interesting facts about you</legend>
-        <div class="form__field--cats">
-          Du you love cats?
+        <legend>An interesting fact about you!</legend>
+        <label class="form__field form__field--cats">
+          Do you love cats?
+          <input 
+            type="radio" 
+            name="cats" 
+            value="yes"
+          > 
+          Yes
           <label class="form__field">
-            Yes
-            <input 
-             type="radio" 
-             name="cats" 
-             value="yes"
-            >
-          </label>
-          <label class="form__field">
-            No
             <input 
              type="radio" 
              name="cats" 
              value="no"
             >
+            No
           </label>
-        </div>
-        <label for="form__field">
+        </label>
+        <label class="form__field">
           What is your favorite color?
           <input 
            type="color" 
@@ -113,21 +110,21 @@
            value="#00"
           >
         </label>
-        <label for="form__field">
+        <label class="form__field">
           What time do you go to bed?
           <input 
            type="time" 
            name="time"
+           step="1"
           >
         </label>
-        <label for="form__field">
+        <label class="form__field form__field--cars">
           What are you favorite brand of cars?
-          <select name="car">
+          <select name="car" size="4">
             <option>BMW</option>
-            <option>VW</option>
             <option>Audi</option>
-            <option>Fiat</option>
-          </select>
+            <option>Lada</option>
+          </select>    
         </label>
         <label class="form__field">
           How do you rate our work?
@@ -146,8 +143,8 @@
           Comments:
           <textarea name="comments"></textarea>
         </label>
-        <label for="choice">
-          Would you reccomend us?
+        <label class="choice">
+          Would you recommend us?
           <select name="choice">
             <option selected>yes</option>
             <option>no</option>
