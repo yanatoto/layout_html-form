@@ -1,9 +1,9 @@
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.form__fieldset {
   margin-bottom: 20px;
+}
+
+.form__field {
+  display: block;
 }
 
 .form__field:not(:last-child) {
@@ -11,5 +11,5 @@ fieldset {
 }
 
 .form__field--cats {
-  display: inline;
+  display: inline-block;
 }

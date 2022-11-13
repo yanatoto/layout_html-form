@@ -19,7 +19,7 @@
      action="https://mate-academy-form-lesson.herokuapp.com/create-application" 
      method="post"
     >
-      <fieldset class="form__personal">
+      <fieldset class="form__fieldset">
         <legend>Personal information</legend>
         <label class="form__field">
           Surname:
@@ -63,7 +63,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__registration">
+      <fieldset class="form__fieldset">
         <legend>Registration</legend>
         <label class="form__field">
           E-mail:
@@ -76,32 +76,36 @@
         <label class="form__field">
           Password:
           <input 
-           type="text" 
+           type="password" 
            name="password" 
            autocomplete="off"
           >
         </label>
       </fieldset>
 
-      <fieldset class="form__information">
+      <fieldset class="form__fieldset">
         <legend>An interesting fact about you!</legend>
+        
         <label class="form__field form__field--cats">
           Do you love cats?
           <input 
-            type="radio" 
-            name="cats" 
-            value="yes"
+           type="radio" 
+           name="cats" 
+           value="yes"
           > 
           Yes
-          <label class="form__field">
-            <input 
-             type="radio" 
-             name="cats" 
-             value="no"
-            >
-            No
-          </label>
         </label>
+        <label class="form__field form__field--cats">
+          <input 
+           type="radio" 
+           name="cats" 
+           value="no"
+          >
+          No
+        </label>
+        
+        
+        
         <label class="form__field">
           What is your favorite color?
           <input 
@@ -137,7 +141,7 @@
         </label>
       </fieldset>
 
-      <fieldset class="form__registration">
+      <fieldset class="form__fieldset">
         <legend>Additional info:</legend>
         <label class="form__field">
           Comments:
@@ -146,7 +150,7 @@
         <label class="choice">
           Would you recommend us?
           <select name="choice">
-            <option selected>yes</option>
+            <option>yes</option>
             <option>no</option>
           </select>
         </label>
